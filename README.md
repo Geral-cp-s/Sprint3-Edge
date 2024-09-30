@@ -3,7 +3,7 @@
 </p>
 <h1 align="Center">🏎️ Race Lap Time Capture System with ESP32 and PIR Sensor</h1>
 
-# Índice
+# Table of Contents
 * [1 - Project Description](#descricao)
 * [2 - Architecture and Components](#componentes)
   * [2.1 - Phisycal Components](#componentes1)
@@ -150,8 +150,10 @@
 
 <h2 id="codigo">Code</h2> 
 <p>Upload the code to your microcontroller. The code includes the initialization of the sensors, data reading, and display on the LCD, as well as logic to trigger alerts based on the detected amount of rain and to measure lap times.</p>
+https://github.com/Geral-cp-s/Sprint3-Edge/blob/main/code.ino
 
 <h2 id="Simulador">Access to the Simulator</h2>
+https://wokwi.com/projects/410188165632536577
 
 <h2 id="Autores">Authors</h2>
 
