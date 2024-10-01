@@ -5,33 +5,58 @@
 
 # Table of Contents
 * [1 - Project Description](#descricao)
-* [2 - Architecture and Components](#componentes)
-  * [2.1 - Phisycal Components](#componentes1)
-  * [2.2 - Comunication](#componentes2)
-  * [2.3 - Software](#componentes3)
-* [3 - Functionality](#funcionalidades)
-  * [3.1 - Lap Capture](#funcionalidades1)
-  * [3.2 - Storage and Calculation](#funcionalidades2)
-  * [3.3 - Communication and Feedback](#funcionalidades3)
-  * [3.4 - Race Completion](#funcionalidades4)
-* [4 - System Configuration](#config)
-  * [4.1 - Network Settings](#config1)
-  * [4.2 - HTTP Endpoints](#config2)
-  * [4.3 - Hardware Specifications](#config3)
-* [5 - Available Statistics](#estatisticas)
-* [6 - Implementation Steps](#passo-passo)
-  * [6.1 - Implementation Steps](#passo-passo1)
-  * [6.2 - Implementation Steps](#passo-passo2)
-* [7 - Possible Improvements and Expansions](#melhorias)
-* [8 - License](#licenca)
-* [9 - Video](#video)
-* [10 - Code](#codigo)
-* [11 - Access to the Simulator](#simulador)
-* [12- Authors](#autores)
+* [2 - Basic Architecture for IoT Projects](#arquitetura)
+* [3 - Architecture and Components](#componentes)
+  * [3.1 - Phisycal Components](#componentes1)
+  * [3.2 - Comunication](#componentes2)
+  * [3.3 - Software](#componentes3)
+* [4 - Functionality](#funcionalidades)
+  * [4.1 - Lap Capture](#funcionalidades1)
+  * [4.2 - Storage and Calculation](#funcionalidades2)
+  * [4.3 - Communication and Feedback](#funcionalidades3)
+  * [4.4 - Race Completion](#funcionalidades4)
+* [5 - System Configuration](#config)
+  * [5.1 - Network Settings](#config1)
+  * [5.2 - HTTP Endpoints](#config2)
+  * [5.3 - Hardware Specifications](#config3)
+* [6 - Available Statistics](#estatisticas)
+* [7 - Implementation Steps](#passo-passo)
+  * [7.1 - Implementation Steps](#passo-passo1)
+  * [7.2 - Implementation Steps](#passo-passo2)
+* [8 - Possible Improvements and Expansions](#melhorias)
+* [9 - License](#licenca)
+* [10 - Video](#video)
+* [11 - Code](#codigo)
+* [12 - Access to the Simulator](#simulador)
+* [13- Authors](#autores)
 
 
 <h2 id="Descricao">Project Description</h2>
 <p>This project implements a lap time capture system for racing, using an ESP32, a PIR sensor for motion detection, and MQTT for data communication. It allows for the registration, storage, and real-time visualization of detailed lap statistics.</p>
+
+<h2 id="arquitetura">Basic Architecture for IoT Projects</h2>
+<p>IoT projects typically involve several key layers:</p>
+<ol>
+  <li><strong>Devices Layer:</strong>Physical devices like sensors and actuators collect data or perform actions.</li>
+    <ul>
+      <li>In this project: An ESP32 is used with a PIR sensor to detect laps and a buzzer for feedback.</li>
+    </ul>
+  <li><strong>Connectivity Layer:</strong> Devices communicate via protocols like Wi-Fi and MQTT to transmit data.</li>
+    <ul>
+      <li>In this project: The ESP32 connects to the internet via Wi-Fi, and MQTT is used to send lap times to a broker.</li>
+    </ul>
+  <li><strong>Data Processing Layer:</strong> Data can be processed locally or in the cloud.</li>
+    <ul>
+      <li>In this project: Lap times are calculated on the ESP32 and also published to the MQTT broker.</li>
+    </ul>
+  <li><strong>Application Layer:</strong> Users interact with the system through dashboards or apps.</li>
+    <ul>
+      <li>In this project: A dashboard displays real-time race statistics.</li>
+    </ul>
+    <img width="600px" loading="lazy" src = "https://github.com/user-attachments/assets/0007ff04-e78f-44a3-896f-95444fbd1508"/>
+
+
+</ol>
 
 <h2 id="Componentes">🛠️ Architecture and Components</h2> 
 <h3 id="componentes1">Physical Components</h3> 
