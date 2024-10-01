@@ -172,6 +172,7 @@
 <p>This project is available under the MIT License. Feel free to use, modify, and distribute it as needed.</p>
 
 <h2 id="video">Video</h2>
+https://youtu.be/WkrpSNXZ43Y
 
 <h2 id="codigo">Code</h2> 
 <p>Upload the code to your microcontroller. The code includes the initialization of the sensors, data reading, and display on the LCD, as well as logic to trigger alerts based on the detected amount of rain and to measure lap times.</p>
