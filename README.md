@@ -158,6 +158,7 @@
   <li><strong>Serial Monitor:</strong> Check the output in the serial monitor to confirm the connection to Wi-Fi and the MQTT broker.</li>
   <li><strong>Access Web Server:</strong> Use the IP of the ESP32 to access the /race_status endpoint and view the data in JSON format.</li> 
   <li><strong>Dashboard Integration:</strong> Ensure your dashboard is configured to connect to the same MQTT broker and subscribe to the /race/laps topic to receive real-time data.</li>
+  <img width="600px" loading="lazy" src = "https://github.com/user-attachments/assets/034486c3-4373-4f9c-ae11-180d8c241137"/>
 </ol>
 
 <h2 id="melhorias">🔧 Possible Improvements and Expansions</h2> 
